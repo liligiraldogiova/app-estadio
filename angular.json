@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "app-cine": {
+        "app-estadio": {
             "projectType": "application",
             "schematics": {},
             "root": "",
@@ -13,7 +13,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/app-cine",
+                        "outputPath": "dist/app-estadio",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "app-cine:build"
+                        "browserTarget": "app-estadio:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "app-cine:build:production"
+                            "browserTarget": "app-estadio:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "app-cine:build"
+                        "browserTarget": "app-estadio:build"
                     }
                 },
                 "test": {
@@ -113,16 +113,16 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "app-cine:serve"
+                        "devServerTarget": "app-estadio:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "app-cine:serve:production"
+                            "devServerTarget": "app-estadio:serve:production"
                         }
                     }
                 }
             }
         }
     },
-    "defaultProject": "app-cine"
+    "defaultProject": "app-estadio"
 }
